@@ -1,0 +1,4 @@
+backtrader
+natplotlib
+pandas
+pandas_datareader

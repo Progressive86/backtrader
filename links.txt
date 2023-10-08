@@ -1,0 +1,4 @@
+https://github.com/mementum/backtrader/blob/master/datas/orcl-1995-2014.txt
+https://backtrader.com/docu/installation/
+https://backtrader.com/docu/quickstart/quickstart/
+https://finance.yahoo.com/?guccounter=1&guce_referrer=aHR0cHM6Ly9zZWFyY2guYnJhdmUuY29tLw&guce_referrer_sig=AQAAAEeicFUfkBGPbuTWmCz91lL-aIjd-KQaSMj0h19xd1oLo1wJh19lo7H3EcBoCseRKH6Sh1D_5xaawbBQnwPsGzAg7tvPDPGzkEdbtZrgE-5ociImzmwaEj0RYn9cD0mO0f6syI8oi54iQ7e8j6zDWq33Mm1S68HlkB6anSBDpxTM
