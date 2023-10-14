@@ -1,13 +1,14 @@
-import backtrader
+import backtrader as bt
 import datetime
-from strategies import TestStrategy
+from strategies.strategies import TestStrategy as TestStrategy
+#from strategies.sma_signals import SmaCross as TestStrategy
 
-cerebro = backtrader.Cerebro() #https://backtrader.com/docu/
+cerebro = bt.Cerebro() #https://backtrader.com/docu/
 
 cerebro.broker.set_cash(1000000)
 
 # Create a Data Feed
-data = backtrader.feeds.YahooFinanceCSVData(
+data = bt.feeds.YahooFinanceCSVData(
     dataname="oracle.csv",
     # Do not pass values before this date
     fromdate=datetime.datetime(2000, 1, 1),
@@ -19,12 +20,13 @@ cerebro.adddata(data)
 
 cerebro.addstrategy(TestStrategy)
 
-cerebro.addsizer(backtrader.sizers.FixedSize, stake=1000)
+cerebro.addsizer(bt.sizers.FixedSize, stake=1000)
 
 print('Starting Portfolio Value: %.2f' % cerebro.broker.getvalue())
 
 cerebro.run()
 
 print('Final Portfolio Value: %.2f' % cerebro.broker.getvalue())
+#print(cerebro.)
 
 cerebro.plot()
